@@ -43,3 +43,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# 12 Factor
+gem 'rails_12factor'
+
+# Foundation
+gem 'foundation-rails'
