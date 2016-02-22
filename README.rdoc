@@ -1,8 +1,9 @@
-== theFirehoseProject Quiz # 1
+== theFirehoseProject Quiz # 2
 
 This simple rails app includes:
 
-* A homepage with static content and a header that is not black
+* A book model (and associated controllers, views, and migration)
+* A form to add a new book that works
 * Hosted on Heroku
 * Clearly, the code is here on GitHub
 
