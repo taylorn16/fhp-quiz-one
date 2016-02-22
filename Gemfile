@@ -49,3 +49,6 @@ gem 'rails_12factor'
 
 # Foundation
 gem 'foundation-rails'
+
+# Simple form
+gem 'simple_form'
