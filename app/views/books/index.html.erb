@@ -1,0 +1,39 @@
+<div class="row">
+
+  <div class="small-8 small-offset-2 columns">
+    <h1>All Books</h1>
+    <hr>
+    <% unless @books.empty? %>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @books.each do |book| %>
+            <tr>
+              <td><%= book.title %></td>
+              <td><%= book.author %></td>
+              <td><%= book.description %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <p>You have no books! Add some!</p>
+    <% end %>
+    <hr>
+    <h3>Add A New Book</h3>
+    <%= simple_form_for @book do |f| %>
+      <%= f.input :title %>
+      <%= f.input :author %>
+      <%= f.input :description %>
+      <%= f.submit "Add Book", :class => 'button' %>
+    <% end %>
+
+  </div>
+
+</div>
